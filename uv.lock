@@ -210,7 +210,7 @@ wheels = [
 ]
 
 [[package]]
-name = "video-downloader"
+name = "social-media-video-downloader"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
