@@ -34,10 +34,16 @@ async def download_video(url: str = Query(...), format: str = Query("best")):
         output_template = f"/tmp/{uid}.%(ext)s"
 
         ydl_opts = {
-            'format': format,
-            'outtmpl': output_template,
+            'format': 'bestaudio/best',
+            'cookiefile': 'cookies.json',
+            'postprocessors': [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192',
+            }],
+            'outtmpl': 'downloads/%(title)s.%(ext)s',
             'quiet': True,
-            'merge_output_format': 'mp4',
+            'no_warnings': True,
         }
 
         # Download the video using yt-dlp Python API
