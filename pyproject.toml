@@ -1,5 +1,5 @@
 [project]
-name = "Social Media Video Downloader"
+name = "social-media-video-downloader"
 version = "0.1.0"
 description = "A FastAPI backend using yt-dlp to download and stream videos from YouTube, TikTok, Facebook, Instagram, Twitter, and more. Supports resolution selection, original filenames, and browser streaming. Easy to integrate with web or mobile apps. For educational use only."
 readme = "README.md"
