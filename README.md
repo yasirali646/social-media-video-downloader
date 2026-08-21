@@ -1,3 +1,5 @@
+
+
 # 🎥 Social Media Video Downloader
 
 A lightweight FastAPI-based web API that allows you to download videos from various platforms such as **YouTube**, **TikTok**, **Facebook**, **Instagram**, **Twitter**, and more. This API uses the powerful `yt-dlp` tool to fetch videos and streams them directly to the client without storing them on the server. Perfect for integration with mobile apps, web clients, or educational tools.
@@ -22,6 +24,7 @@ A lightweight FastAPI-based web API that allows you to download videos from vari
    ```bash
    git clone https://github.com/yasirali646/social-media-video-downloader.git
    cd social-media-video-downloader
+   ```
 2. Install Dependencies (Using uv)
     ```bash
     uv venv
@@ -75,5 +78,3 @@ This project supports video downloads from the following platforms (and more):
 
 ## ⚠️ Disclaimer
 This project is intended for <b>educational purposes only</b>. Downloading copyrighted material without permission may violate local laws and platform policies. Use responsibly.
-
-
